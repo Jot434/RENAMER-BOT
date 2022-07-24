@@ -34,7 +34,7 @@ def help_user(bot, update):
     bot.send_message(
         chat_id=update.chat.id,
         text=script.HELP_USER,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="😇 DEVELOPER", url="https://t.me/Trackstudio")]]),
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="😇 DEVELOPER", url="https://t.me/MoviesPitaaraa")]]),
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
@@ -51,20 +51,7 @@ def send_start(bot, update):
         parse_mode="markdown",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id, 
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="😇 DEVELOPER", url="https://t.me/Trackstudio")]])
-    )
-
-
-@Client.on_message(filters.command(["upgrade"]))
-def upgrade(bot, update):
-    # logger.info(update)
-
-    bot.send_message(
-        chat_id=update.chat.id,
-        text=script.UPGRADE_TEXT,
-        parse_mode="html",
-        reply_to_message_id=update.message_id,
-        disable_web_page_preview=True
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="😇 DEVELOPER", url="https://t.me/MoviesPitaaraa")]])
     )
 
 @pyrogram.Client.on_message(filters.command(["about"]))
@@ -75,7 +62,7 @@ async def about(bot, update):
         parse_mode="markdown",
         reply_to_message_id=update.message_id, 
         disable_web_page_preview = True, 
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="😇 DEVELOPER", url="https://t.me/Trackstudio")]])  
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="😇 DEVELOPER", url="https://t.me/MoviesPitaaraa")]])  
     )
 
 
